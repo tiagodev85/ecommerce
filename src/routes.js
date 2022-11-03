@@ -9,17 +9,5 @@ router.get("/", (req, res) => {
 router.post("/users", UserController.createUser);
 router.get("/users", UserController.getUsers);
 router.get("/users/:id", UserController.getUserById);
-// router.post("/login");
-// PRODUCTS
-// router.post("/products/:user_id");
-// router.patch("/products/:user_id/:product_id");
-// router.get("/products/:user_id");
-// router.get("/products/:product_id");
-// router.get("/products");
-// router.delete("/products/:user_id/:product_id");
-// CARTS
-// router.post("/carts/:user_id");
-// router.get("/carts/:user_id");
-// router.get("/carts/:user_id/:cart_id");
 
 module.exports = router;
