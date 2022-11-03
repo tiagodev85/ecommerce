@@ -7,8 +7,8 @@ router.get("/", (req, res) => {
 });
 // USERS
 router.post("/users", UserController.createUser);
-router.get("/users");
-router.get("/users/:user_id");
+router.get("/users", UserController.getUsers);
+router.get("/users/:id", UserController.getUserById);
 // router.post("/login");
 // PRODUCTS
 // router.post("/products/:user_id");
